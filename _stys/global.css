@@ -16,6 +16,16 @@ nav { display:block;
 	background-color:#252525; 
 	z-index:999; } 
 
+	nav .menu li { display:inline-block; 
+		list-style-type:none; 
+		font-weight:normal; 
+		cursor:pointer; 
+		padding:21px; 
+		padding-bottom:22px; } 
+	nav .menu li:hover { background-color:#111;}
+
+	nav .menu li#logo:hover { background-color:transparent !important; } 
+
 section { display:block; 
 	height:100px; 
 	z-index:20; }
