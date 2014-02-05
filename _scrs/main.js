@@ -17,7 +17,7 @@ function scrollTo(id) {
 
 function scrollAnimated(id,animation,actual) {
 	var qty = actual; 
-	if(actual<0) qty = $('section.'+id).offset().top-70; 
+	if(actual<0) qty = $('section.'+id).offset().top-60; 
 
 	// Change selected state of clicked menu item 
 	$('nav .menu li.selected').removeClass("selected"); 

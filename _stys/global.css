@@ -9,6 +9,8 @@ body { color:#fff;
 	line-height:20px; 
 	background-color:#292929; } 
 
+div { background-repeat:no-repeat; }
+
 nav { display:block; 
 	position:fixed; 
 	top:0px; left:0px; 
@@ -20,6 +22,8 @@ nav { display:block;
 	z-index:999; } 
 
 	nav content { text-align:left; }
+
+	nav .menu li:nth-of-type(2) { border-left:1px solid #333; }
 
 	nav .menu li { display:inline-block; 
 		list-style-type:none; 
