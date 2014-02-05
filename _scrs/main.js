@@ -63,4 +63,15 @@ function setup_slider() {
 		slider.prev(); 
 	}); 
 
+	// Setting size of project content 
+	set_project_content_size($(window).width()); 
+	$(window).resize(function() {
+		set_project_content_size($(window).width()); 
+	}); 
+
+}
+
+function set_project_content_size(size) {
+	$('.project-content').css({ 'width':size+'px' }); 
+	$('.project-content p, .project-content h1').css({ 'padding-left':((size/2)-300)+'px' }); 
 }
