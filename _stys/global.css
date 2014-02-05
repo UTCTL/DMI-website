@@ -1,6 +1,6 @@
 @font-face { font-family:Segan; src:url('_fonts/Segan-Light.ttf'); } 
 
-* { margin:0px; padding:0px; } 
+* { margin:0px; padding:0px; background-repeat:no-repeat; } 
 
 body { color:#fff; 
 	font-family:Segan; 
@@ -8,8 +8,6 @@ body { color:#fff;
 	font-weight:normal; 
 	line-height:20px; 
 	background-color:#292929; } 
-
-div { background-repeat:no-repeat; }
 
 nav { display:block; 
 	position:fixed; 
@@ -24,8 +22,12 @@ nav { display:block;
 	nav content { text-align:left; }
 
 	nav .menu li:nth-of-type(2) { border-left:1px solid #333; }
+	nav .menu li#logo { display:table-cell; 
+		width:110px; 
+		background-image:url('../_imgs/logo_small.png'); 
+		background-position:0px 1px; } 
 
-	nav .menu li { display:inline-block; 
+	nav .menu li { display:table-cell; 
 		list-style-type:none; 
 		font-weight:normal; 
 		color:#aaa;
@@ -56,7 +58,7 @@ content { display:block;
 h1 { font-size:50px; 
 	font-weight:normal; 
 	color:#fff; 
-	background:-webkit-linear-gradient(#fff,#aaa); 
+	background:-webkit-linear-gradient(#fff,#bbb); 
 	-webkit-background-clip:text; 
 	-webkit-text-fill-color:transparent; 
 	line-height:60px; } 
