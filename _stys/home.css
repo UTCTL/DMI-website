@@ -54,10 +54,13 @@ section.companies { background-color:#363636;
 
 /* 	APPLY SECTION 	*/
 /* 	PROJECT SECTION 	*/
-section.projects { height:640px; 
+.projects { position:relative; overflow:auto; }
+	section.projects li { list-style:none; }
+	section.projects ul li { float:center; }
+/*section.projects { height:640px; 
 	background-image:url('../_imgs/projects/project_1.jpg'); 
 	background-size:cover; 
-	background-position:center center; }
+	background-position:center center; }*/
 
 	section.projects .arrow { display:block; 
 		width:45px; 
