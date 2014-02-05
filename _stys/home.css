@@ -1,12 +1,12 @@
 section:nth-of-type(1) { margin-top:60px; } 
 
+/* 	ABOUT SECTION 	*/
 section.about { height:650px;  
 	background-image:url('../_imgs/banner.jpg'); 
 	background-size:cover; 
 	background-position:center center; }
 
-	section.about content { display:block; 
-		text-align:center; } 
+	section.about content {  } 
 
 	section.about content .play-button { display:block; 
 		height:280px; }
@@ -20,5 +20,40 @@ section.about { height:650px;
 		line-height:28px; 
 		letter-spacing:1px; }
 
-section.companies { background-color:#363636; } 
+/* 	INTERNSHIP SECTION 	*/
+/* 	COMPANIES SECTION 	*/
+section.companies { background-color:#363636; 
+	height:192px; 
+	padding:0px; } 
+	
+	section.companies content { padding:0px; } 
+
+	section.companies content .label { display:table-cell; 
+		width:100px; 
+		height:192px; 
+		font-family:Lucida Grande, Arial; 
+		font-size:14px; 
+		vertical-align:middle; 
+		padding:0px 50px 0px 50px; }
+	section.companies content .logos { display:table-cell; 
+		width:800px; height:192px; 
+		border-left:1px solid #444; }
+
+		section.companies content .logos li.logo { display:inline-block; 
+			width:120px; height:120px; 
+			margin-top:36px; 
+			list-style:none; 
+			background-position:center center; }
+
+			li.logo#ut { background-image:url('../_imgs/logos/ut.png'); }
+			li.logo#frog { background-image:url('../_imgs/logos/frog.png'); }
+			li.logo#mutual { background-image:url('../_imgs/logos/mutual.png'); }
+			li.logo#myedu { background-image:url('../_imgs/logos/myedu.png'); 
+				width:200px; }
+			li.logo#hack { background-image:url('../_imgs/logos/hack.png'); }
+
+/* 	APPLY SECTION 	*/
+/* 	PROJECT SECTION 	*/
+/* 	STAFF SECTION 	*/
+/* 	FOOTER SECTION 	*/
 section.footer { background-color:#252525; } 

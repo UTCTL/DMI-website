@@ -19,6 +19,8 @@ nav { display:block;
 	font-family:Lucida Grande, Arial; 
 	z-index:999; } 
 
+	nav content { text-align:left; }
+
 	nav .menu li { display:inline-block; 
 		list-style-type:none; 
 		font-weight:normal; 
@@ -32,11 +34,11 @@ nav { display:block;
 
 	nav .menu li.selected { background-color:#111; 
 		color:#fff; }
-		
+
 	nav content { padding:0px; }
 
 section { display:block; 
-	height:100px; 
+	height:300px; 
 	z-index:20; }
 
 content { display:block; 
@@ -44,6 +46,7 @@ content { display:block;
 	left:50%; 
 	margin-left:-500px; 
 	width:1000px; 
+	text-align:center;
 	padding:50px 0px 50px 0px; } 
 
 h1 { font-size:50px; 
