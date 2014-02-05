@@ -54,21 +54,32 @@ section.companies { background-color:#363636;
 
 /* 	APPLY SECTION 	*/
 /* 	PROJECT SECTION 	*/
-.projects { position:relative; overflow:auto; }
-	section.projects li { list-style:none; }
-	section.projects ul li { float:center; }
-/*section.projects { height:640px; 
-	background-image:url('../_imgs/projects/project_1.jpg'); 
+section.projects { height:640px; 
+	/*background-image:url('../_imgs/projects/project_1.jpg'); 
 	background-size:cover; 
-	background-position:center center; }*/
+	background-position:center center; */ }
+
+	section.projects .banner { position:relative; overflow:auto; }
+		section.projects .banner li { list-style:none; display:table-cell; }
+		section.projects .banner ul li { float:center; 
+			background-size:cover; 
+			background-repeat:no-repeat; 
+			background-position:center center; }
+
+	section.projects .dots { z-index:998; 
+		position:relative; }
 
 	section.projects .arrow { display:block; 
 		width:45px; 
 		height:109px; 
+		position:absolute; 
+		cursor:pointer; 
 		z-index:899; }
 
-		.arrow#right { background-image:url('../_imgs/arrow_right.png'); }
-		.arrow#left { background-image:url('../_imgs/arrow_left.png'); }
+		.arrow#right { right:50px; 
+			background-image:url('../_imgs/arrow_right.png'); }
+		.arrow#left { left:50px; 
+			background-image:url('../_imgs/arrow_left.png'); }
 
 /* 	STAFF SECTION 	*/
 /* 	FOOTER SECTION 	*/

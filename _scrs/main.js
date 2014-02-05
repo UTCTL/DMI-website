@@ -34,17 +34,33 @@ function scrollAnimated(id,animation,actual) {
 
 // Setting up project slider 
 function setup_slider() {
+	
+	// Formatting the banner and starting slider
+	$('.banner li').css({'height': ($('.projects').height())+'px'}); 
 	$(function() {
-		var slider = $('.projects').unslider({
+		var slider = $('.banner').unslider({
 			speed: 500,
 			delay: 5000, 
 			complete: function() {}, 
 			keys: true, 
 			dots: true, 
 			fluid: true 
-		}); 
-		var data = slider.data('unslider'); 
+		}).data('unslider').start(); 
+		var height = $('.projects').height()-100; 
+		var pos_top = $('.projects').offset().top+(height/2)-($('.arrow').height()/2)+30; 
 
-		data.start(); 
+		$('.dots').css({'top': height+'px', 'z-index':'998' }); 
+		$('banner li').css({'z-index':'299'}); 
+		$('.arrow').css({ 'top': pos_top+'px' }); 
 	}); 
+
+	// Activating arrows 
+	var slider = $('.banner').unslider().data('unslider'); 
+	$('.arrow#right').on('click',function() {
+		slider.next(); 
+	}); 
+	$('.arrow#left').on('click',function() {
+		slider.prev(); 
+	}); 
+
 }
