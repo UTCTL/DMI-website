@@ -19,6 +19,11 @@ function scrollAnimated(id,animation,actual) {
 	var qty = actual; 
 	if(actual<0) qty = $('section.'+id).offset().top-70; 
 
+	// Change selected state of clicked menu item 
+	$('nav .menu li.selected').removeClass("selected"); 
+	$('nav .menu li#'+id).addClass("selected"); 
+
+	// Scroll to desired location on page
 	$('html,body').animate({ 
 		scrollTop: qty 
 	},1000,'swing'); 
