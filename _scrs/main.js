@@ -51,7 +51,7 @@ function setup_slider() {
 			fluid: true 
 		}).data('unslider').start(); 
 		var height = $('.projects').height()-100; 
-		var pos_top = $('.projects').offset().top+(height/2)-($('.arrow').height()/2)+30; 
+		var pos_top = $('.projects').offset().top+(height/2)-($('.arrow').height()/2)+25; 
 
 		$('.dots').css({'top': (height+60)+'px', 'z-index':'998' }); 
 		$('banner li').css({'z-index':'299'}); 

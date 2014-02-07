@@ -95,11 +95,16 @@ section.projects { height:640px; }
 			opacity:1; }
 
 	section.projects .arrow { display:block; 
-		width:45px; 
-		height:109px; 
+		width:55px; 
+		height:120px; 
+		background-position:0px 0px; 
+		background-repeat:no-repeat; 
 		position:absolute; 
 		cursor:pointer; 
 		z-index:899; }
+
+		section.projects .arrow:hover { background-position:0px -120px; }
+		section.projects .arrow:active { background-position:0px -240px; }
 
 		.arrow#right { right:50px; 
 			background-image:url('../_imgs/arrow_right.png'); }
