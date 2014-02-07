@@ -76,7 +76,23 @@ section.projects { height:640px; }
 			text-align:center; }
 
 	section.projects .dots { z-index:998; 
-		position:relative; }
+		position:absolute; 
+		left:50%; } 
+
+		section.projects .dots li.dot { 
+			display:inline-block; 
+			width:6px; 
+			height:6px; 
+			margin:0px 6px; 
+			padding:0px; 
+			text-indent:-999em; 
+			border:2px solid #fff; 
+			border-radius:4px; 
+			cursor:pointer; 
+			opacity:.4; }
+		section.projects .dots li.dot.active {
+			background-color:#fff; 
+			opacity:1; }
 
 	section.projects .arrow { display:block; 
 		width:45px; 

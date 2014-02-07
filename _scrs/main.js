@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	setup_scrolling(); 
 	setup_slider(); 
+
+	$(window).load(function() {
+		set_project_content_size($(window).width()); 
+	}); 
 }); 
 
 
@@ -49,7 +53,7 @@ function setup_slider() {
 		var height = $('.projects').height()-100; 
 		var pos_top = $('.projects').offset().top+(height/2)-($('.arrow').height()/2)+30; 
 
-		$('.dots').css({'top': height+'px', 'z-index':'998' }); 
+		$('.dots').css({'top': (height+60)+'px', 'z-index':'998' }); 
 		$('banner li').css({'z-index':'299'}); 
 		$('.arrow').css({ 'top': pos_top+'px' }); 
 	}); 
@@ -64,8 +68,7 @@ function setup_slider() {
 	}); 
 
 	// Setting size of project content 
-	set_project_content_size($(window).width()); 
-	$(window).resize(function() {
+	$(window).resize(function() { 
 		set_project_content_size($(window).width()); 
 	}); 
 
@@ -74,4 +77,5 @@ function setup_slider() {
 function set_project_content_size(size) {
 	$('.project-content').css({ 'width':size+'px' }); 
 	$('.project-content p, .project-content h1').css({ 'padding-left':((size/2)-300)+'px' }); 
-}
+	$('.dots').css({ 'margin-left':(0-($('.dots').width()/2))+'px' }); 
+} 
