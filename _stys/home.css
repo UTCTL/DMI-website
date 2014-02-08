@@ -112,5 +112,30 @@ section.projects { height:640px; }
 			background-image:url('../_imgs/arrow_left.png'); }
 
 /* 	STAFF SECTION 	*/
+section.staff { height:; } 
+
+	section.staff ul { display:table-cell; 
+		padding-top:20px; }
+	section.staff ul li { display:inline-block; 
+		list-style-type:none; 
+		text-align:center; 
+		width:150px; 
+		margin:30px 15px; } 
+
+		section.staff ul li div { 
+			display:block; 
+			width:120px; height:120px; 
+			margin:15px; 
+			background-repeat:no-repeat; 
+			background-position:center center; 
+			border-radius:120px; 
+			border:5px solid #fff; 
+			box-shadow:0px 0px 10px #111; } 
+		section.staff ul li p { 
+			width:120px; 
+			margin:0px 15px; 
+			margin-left:20px; 
+			text-align:center; }
+
 /* 	FOOTER SECTION 	*/
 section.footer { background-color:#252525; } 
