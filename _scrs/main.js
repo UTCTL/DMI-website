@@ -108,7 +108,6 @@ function get_current_section() {
 }
 
 function change_nav_state(focus) {
-	console.log(focus); 
 	switch(focus) {
 		case null:
 			return; 
