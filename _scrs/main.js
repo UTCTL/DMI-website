@@ -14,21 +14,26 @@ function setup_scrolling() {
 		e.preventDefault(); 
 		var id = $(this).attr('id'); 
 		if(id=="logo") id = "about"; 
-		scrollTo(id); 
+		scroll_to(id); 
+	}); 
+
+	$(window).scroll(function() {
+		change_nav_state(get_current_section()); 
 	}); 
 }
 
-function scrollTo(id) {
-	scrollAnimated(id,true,-1); 
+function scroll_to(id) {
+	scroll_animated(id,true,-1); 
 }
 
-function scrollAnimated(id,animation,actual) {
+function scroll_animated(id,animation,actual) {
 	var qty = actual; 
 	if(actual<0) qty = $('section.'+id).offset().top-60; 
 
 	// Change selected state of clicked menu item 
-	$('nav .menu li.selected').removeClass("selected"); 
-	$('nav .menu li#'+id).addClass("selected"); 
+	// $('nav .menu li.selected').removeClass("selected"); 
+	// $('nav .menu li#'+id).addClass("selected"); 
+	// change_nav_state(id); 
 
 	// Scroll to desired location on page
 	$('html,body').animate({ 
@@ -79,3 +84,44 @@ function set_project_content_size(size) {
 	$('.project-content p, .project-content h1').css({ 'padding-left':((size/2)-300)+'px' }); 
 	$('.dots').css({ 'margin-left':(0-($('.dots').width()/2))+'px' }); 
 } 
+
+function get_current_section() {
+	var focus = $(window).scrollTop()+($(window).height()*(1/4)); 
+	var sections = []; 
+	var top_bound; 
+	var bot_bound; 
+	var this_section; 
+
+	$(document).find('section').each(function() {
+		sections.push(this.className); 
+	}); 
+
+	for(var i = 0; i<sections.length; i++) {
+		this_section = 'section.'+sections[i]; 
+		top_bound = $(this_section).offset().top; 
+		bot_bound = top_bound + $(this_section).height(); 
+
+		if(top_bound<=focus && focus<=bot_bound) return sections[i]; 
+	}
+
+	return null; 
+}
+
+function change_nav_state(focus) {
+	console.log(focus); 
+	switch(focus) {
+		case null:
+			return; 
+			break; 
+		case 'companies':
+			focus = 'internship'; 
+			break; 
+		case 'staff':
+		case 'footer':
+			focus = 'projects'; 
+			break; 
+	}
+
+	$('nav .menu li').removeClass('selected'); 
+	$('nav .menu li#'+focus).addClass('selected'); 
+}
