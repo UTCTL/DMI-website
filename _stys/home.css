@@ -24,7 +24,8 @@ section.about { height:650px;
 /* 	COMPANIES SECTION 	*/
 section.companies { background-color:#363636; 
 	height:192px; 
-	padding:0px; } 
+	padding:0px; 
+	box-shadow:0px 20px 10px #000; } 
 	
 	section.companies content { padding:0px; } 
 
@@ -53,6 +54,37 @@ section.companies { background-color:#363636;
 			li.logo#hack { background-image:url('../_imgs/logos/hack.png'); }
 
 /* 	APPLY SECTION 	*/
+section.apply { height:440px; 
+	background-color:#262626; } 
+	
+	section.apply #deadline { color:#ddd; }
+
+	section.apply .description { display:inline-block; 
+		width:320px; 
+		padding:15px 89px; 
+		margin:30px 0px; 
+		float:left; 
+		font-size:10pt; }
+
+		section.apply .description:nth-of-type(1) { 
+			border-right:1px solid #444; }
+
+		section.apply .button { display:block; 
+			width:220px; 
+			height:70px; 
+			background-color:#06f; 
+			text-align:center; 
+			border:1px solid #06f; 
+			border-radius:10px; 
+			background:-webkit-linear-gradient(#4aa0da,#026eb7); 
+			margin:30px auto; 
+			cursor:pointer; } 
+			section.apply .button:hover { 
+				background:-webkit-linear-gradient(#5bb1eb,#137fc8); }
+			section.apply .button:active { 
+				border:1px solid #04e; 
+				background:-webkit-linear-gradient(#3990c9,#015da6); }
+
 /* 	PROJECT SECTION 	*/
 section.projects { height:640px; }
 
