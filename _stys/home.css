@@ -21,6 +21,38 @@ section.about { height:650px;
 		letter-spacing:1px; }
 
 /* 	INTERNSHIP SECTION 	*/
+section.internship { height:600px; 
+	background-image:url('../_imgs/stock_people.png'); 
+	background-repeat:no-repeat; 
+	background-position:50% 40px; }
+
+	section.internship .description { display:inline-block; 
+		width:400px; 
+		padding:15px 89px; 
+		float:right; 
+		text-align:left; 
+		line-height:30px; }
+
+		section.internship .description p { padding:20px 0px; }
+		section.internship .description .calendar { 
+			text-align:center; }
+
+			section.internship .calendar #mark { display:block; 
+				width:250px; 
+				margin:auto; 
+				border-bottom:1px solid #444; }
+			section.internship .calendar table { margin:10px auto; 
+				padding-left:5px; }
+			section.internship .calendar #date { display:table-cell; 
+				font-size:32pt; } 
+			section.internship .calendar #time { display:block; 
+				color:#ddd; 
+				line-height:12px; 
+				margin-top:8px; }
+			section.internship .calendar #location { display:block; 
+				color:#51a1d6; }
+
+
 /* 	COMPANIES SECTION 	*/
 section.companies { background-color:#363636; 
 	height:192px; 
