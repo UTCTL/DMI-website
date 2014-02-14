@@ -26,18 +26,19 @@
 	<link rel="icon" type="image/x-icon" href="_imgs/favicon.ico"> 
 	<link rel="stylesheet" type="text/css" href="_stys/global.css">
 	<link rel="stylesheet" type="text/css" href="_stys/home.css"> 
+	<link rel="stylesheet" type="text/css" href="_stys/fontello.css"> 
 
 	<script src="_scrs/jquery.min.js"></script>
 	<script src="_scrs/jquery.event.move.js"></script>
 	<script src="_scrs/jquery.event.swipe.js"></script> 
-	<script src="_scrs/unslider.min.js"></script> 
+	<script src="_scrs/unslider.js"></script> 
 	<script src="_scrs/main.js"></script> 
 </head><body>
 
 <nav>
  <content>
  	<ul class="menu"> 
- 	 <li id="logo"></li> 
+ 	 <li id="logo">Digital Media Institute</li> 
  	 <li id="about" class="selected">About</li>
  	 <li id="internship">Internship event</li>
  	 <li id="apply">Apply</li> 
@@ -49,10 +50,12 @@
 <section class="about">
  <content>
  	<h1>About DMI</h1> 
- 	<h2>One liner statement.</h2> 
+ 	<h2>A student internship program designed to help make the University of Texas a world leader in Instructional Technology.</h2> 
  	<div class="play-button"></div>
  	<div class="text" id="intro-text">
- 		Intership event description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada cursus dui quis consequat. Morbi molestie imperdiet ipsum, vitae facilisis lectus pretium sed. Quisque orci sem, consectetur nec mi sit amet, congue tristique arcu. Nunc justo arcu, ullamcorper quis ullamcorper vel, congue sit amet dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+ 		DMI employs talented student staff that work on high-end instructional technology projects for the University of Texas.  DMI also actively promotes partnerships within UT Austin, and with external partners that are leaders in fields like instructional technology, design, and development. For any questions, please contact us at: <a href="mailto:CTL-DMI@UTLISTS.UTEXAS.EDU" class="email">CTL-DMI@UTLISTS.UTEXAS.EDU</a> 
+ 		<br><br>
+ 		&lt;overlay&gt; Internship Event: April 17   Apply by: March 30
  	</div>
  </content>
 </section>
@@ -60,17 +63,19 @@
 <section class="internship">
  <content>
  	<div class="description" id="event">
-	 	<h1>Internship Event</h1>
-	 	<h2>One liner statement.</h2> 
-	 	<p>Intership event description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada cursus dui quis consequat. Morbi molestie imperdiet ipsum, vitae facilisis lectus pretium sed. Quisque orci sem, consectetur nec mi sit amet, congue tristique arcu. Nunc justo arcu, ullamcorper quis ullamcorper vel, congue sit amet dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+	 	<h1>Internship Speed Dating Event</h1>
+	 	<h2>Matching hand-picked students with high quality internship opportunities.</h2> 
+	 	<p>The DMI Internship Speed Dating Event gives high quality internship providers the opportunity to conduct a series of short interviews with hand-picked students.  Students participating in the event are either nominated by their professors, or are selected by from a pool of applicants by DMI staff members.  Internship providers are vetted by DMI staff and extended special invitations to participate in the event.  Participants can expect the opportunity to participate in approximately 10, 10-minute interviews, and appropriate candidates will be matched with appropriate internship opportunities. </p>
+	 	<p>If you are a student that is interested in participating, see the application instructions below.</p>
+	 	<p>If you represent an outside company or a department at UT Austin that would like to participate in the event, please e-mail us at: <a href="CTL-DMI@UTLISTS.UTEXAS.EDU" class="email">CTL-DMI@UTLISTS.UTEXAS.EDU</a></p>
 	 	<div class="calendar">
 	 		<span id="mark">Mark your calendar</span>
 	 		<table width="250px" cellpadding="0" cellspacing="0" border="0">
 	 			<tr><td rowspan="2">
-	 				<span id="date">April 15th</span>
+	 				<span id="date">April 17th</span>
 	 			</td><td align="left">
 	 				<span id="time">2pm</span>
-	 				<span id="location">FAC 321</span>
+	 				<span id="location">SZB 450</span>
 	 			</td></tr>
 	 		</table>
 	 	</div> 
@@ -80,7 +85,7 @@
 
 <section class="companies">
  <content>
- 	<div class="label">Organizations<br>that have<br>participated</div>
+ 	<div class="label">Participating<br>Organizations</div>
  	<ul class="logos">
  		<li class="logo" id="ut" alt="The University of Texas at Austin"></li> 
  		<li class="logo" id="frog" alt="Frog Design"></li> 
@@ -109,22 +114,22 @@
 <section class="projects">
 	<div class="banner">
  		<ul>
-		<li style="background-image:url('_imgs/projects/project_1.jpg'); ">
+		<li style="background-image:url('_imgs/projects/project_3.jpg'); " class="project">
 			<div class="project-content">
-			<h1>A Project Title</h1>
-			<p>A project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada cursus dui quis consequat. Morbi molestie imperdiet ipsum, vitae facilisis lectus pretium sed. Quisque orci sem.</p>
+			<h1>Environ</h1>
+			<p>Environ is an educational game that puts students in the role of a decision maker.  The game is set in near-future Earth, and the player must take a series of actions to help improve the Earths environment without destroying economic output.  Resources are limited, so the player must deeply analyze different courses of actions to make difficult and complex decisions.</p>
 			</div>
 		</li>
-		<li style="background-image:url('_imgs/projects/project_2.jpg'); ">
+		<li style="background-image:url('_imgs/projects/project_1.jpg'); " class="project">
 			<div class="project-content">
-			<h1>Another Project</h1>
-			<p>A project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada cursus dui quis consequat. Morbi molestie imperdiet ipsum, vitae facilisis lectus pretium sed. Quisque orci sem.</p>
+			<h1>Interactive activities for EdX Math Course</h1>
+			<p>DMI Staff created a series of interactive activities for the EdX course Effective Thinking Through Mathematics taught by UT Austin professor Michael Starbird</p>
 			</div>
 		</li>
-		<li style="background-image:url('_imgs/projects/project_3.jpg'); ">
+		<li style="background-image:url('_imgs/projects/project_2.jpg'); " class="project">
 			<div class="project-content">
-			<h1>And More</h1>
-			<p>A project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada cursus dui quis consequat. Morbi molestie imperdiet ipsum, vitae facilisis lectus pretium sed. Quisque orci sem.</p>
+			<h1>Course Transformation Program</h1>
+			<p>DMI Student staff created a series of videos, animations, websites, and interactive activities in support of the UT Austin Course Transformation Program.</p>
 			</div>
 		</li>
  		</ul>
@@ -139,54 +144,65 @@
  	<h2>One liner statement.</h2> 
  	<ul>
  		<li>
- 			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
-			<p>Name Lastname</p>
-			<p>Position</p>
+ 			<div style="background-image:url('_imgs/staff/peter_elam.jpg'); "></div>
+			<p>Peter Elam</p>
+			<p>Program Manager</p>
+			<a href="http://www.linkedin.com/pub/peter-elam/44/848/15b" target="_new" class="icon-linkedin-squared"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
  			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
 			<p>Name Lastname</p>
 			<p>Position</p>
+			<a href="" target="_new" class="icon-blank"></a>
  		</li> 
  		<li>
- 			<div style="background-image:url('_imgs/staff/_blank.png'); "></div>
-			<p>Name Lastname</p>
+ 			<div style="background-image:url('_imgs/staff/sam_acuna.jpg'); "></div>
+			<p>Samuel Acu&ntilde;a</p>
 			<p>Position</p>
+			<a href="http://sam.benova.net" target="_new" class="icon-home"></a>
+			<a href="http://twitter.com/samueleishion" target="_new" class="icon-twitter"></a>
  		</li> 
  	</ul>
  </content>
@@ -199,7 +215,10 @@
  	 	<td width="30%" align="left" valign="top">
  	 	links
  	 </td><td width="30%" align="left" valign="top">
- 	 	links
+ 	 	<ul>
+ 	 		<li><a href="//www.utexas.edu/cio/policies/web-privacy">UT Web Privacy</a></li> 
+ 	 		<li><a href="//www.utexas.edu/cio/policies/web-accessibility">UT Web Accessibility</a></li> 
+ 	 	</ul>
  	 </td><td width="300px" align="center" valign="middle">
  	 	<div class="logo" id="ctl"></div>
  	 	<div class="logo" id="ut2"></div> 

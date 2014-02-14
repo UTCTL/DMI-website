@@ -1,4 +1,5 @@
 @font-face { font-family:Segan; src:url('_fonts/Segan-Light.ttf'); } 
+@font-face { font-family:Social; src:url('_fonts/Social-icons.ttf'); }
 
 * { margin:0px; padding:0px; background-repeat:no-repeat; } 
 
@@ -7,13 +8,7 @@ body { color:#fff;
 	font-size:11pt; 
 	font-weight:normal; 
 	line-height:20px; 
-	background-color:#292929; 
-	-webkit-touch-callout: none; 
-	-webkit-user-select:none; 
-	-khtml-user-select:none; 
-	-moz-user-select:none; 
-	-ms-user-select:none; 
-	user-select:none; } 
+	background-color:#292929; } 
 
 nav { display:block; 
 	position:fixed; 
@@ -27,12 +22,6 @@ nav { display:block;
 
 	nav content { text-align:left; }
 
-	nav .menu li:nth-of-type(2) { border-left:1px solid #333; }
-	nav .menu li#logo { display:table-cell; 
-		width:110px; 
-		background-image:url('../_imgs/logo_small.png'); 
-		background-position:0px 1px; } 
-
 	nav .menu li { display:table-cell; 
 		list-style-type:none; 
 		font-weight:normal; 
@@ -42,6 +31,18 @@ nav { display:block;
 	nav .menu li:hover { background-color:#222; 
 		color:#fff; }
 
+	/*nav .menu li:nth-of-type(2) { border-left:1px solid #333; }*/
+	nav .menu li#logo { display:table-cell; 
+		/*width:110px; */
+		width:50px; 
+		padding:0px 5px 0px 70px;  
+		background-image:url('../_imgs/logo_small.png'); 
+		background-position:0px 1px; 
+		border-right:1px solid #333; 
+		color:#fafafa; 
+		font-weight:bold; 
+		font-size:14pt; 
+		font-family:Segan; } 
 	nav .menu li#logo:hover { background-color:transparent !important; } 
 
 	nav .menu li.selected { background-color:#111; 
@@ -60,6 +61,10 @@ content { display:block;
 	width:1000px; 
 	text-align:center;
 	padding:50px 0px 50px 0px; } 
+
+a { text-decoration:none; 
+	color:#09f; } 
+a:hover { color:#3bf; }
 
 h1 { font-size:50px; 
 	font-weight:normal; 

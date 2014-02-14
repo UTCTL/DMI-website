@@ -54,7 +54,7 @@ function setup_slider() {
 			keys: true, 
 			dots: true, 
 			fluid: true 
-		}).data('unslider').start(); 
+		}).data('unslider').play(); 
 		var height = $('.projects').height()-100; 
 		var pos_top = $('.projects').offset().top+(height/2)-($('.arrow').height()/2)+25; 
 
@@ -80,7 +80,7 @@ function setup_slider() {
 }
 
 function set_project_content_size(size) {
-	$('.project-content').css({ 'width':size+'px' }); 
+	$('.project-content, .projects li.project').css({ 'width':size+'px' }); 
 	$('.project-content p, .project-content h1').css({ 'padding-left':((size/2)-300)+'px' }); 
 	$('.dots').css({ 'margin-left':(0-($('.dots').width()/2))+'px' }); 
 } 

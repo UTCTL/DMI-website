@@ -1,7 +1,7 @@
 section:nth-of-type(1) { margin-top:60px; } 
 
 /* 	ABOUT SECTION 	*/
-section.about { height:650px;  
+section.about { height:680px;  
 	background-image:url('../_imgs/banner.jpg'); 
 	background-size:cover; 
 	background-position:center center; }
@@ -21,8 +21,8 @@ section.about { height:650px;
 		letter-spacing:1px; }
 
 /* 	INTERNSHIP SECTION 	*/
-section.internship { height:600px; 
-	background-image:url('../_imgs/stock_people.png'); 
+section.internship { height:1050px; 
+	background-image:url('../_imgs/students.png'); 
 	background-repeat:no-repeat; 
 	background-position:50% 40px; }
 
@@ -110,7 +110,13 @@ section.apply { height:440px;
 			border-radius:10px; 
 			background:-webkit-linear-gradient(#4aa0da,#026eb7); 
 			margin:30px auto; 
-			cursor:pointer; } 
+			cursor:pointer; 
+			-webkit-touch-callout: none; 
+			-webkit-user-select:none; 
+			-khtml-user-select:none; 
+			-moz-user-select:none; 
+			-ms-user-select:none; 
+			user-select:none; } 
 			section.apply .button:hover { 
 				background:-webkit-linear-gradient(#5bb1eb,#137fc8); }
 			section.apply .button:active { 
@@ -118,7 +124,13 @@ section.apply { height:440px;
 				background:-webkit-linear-gradient(#3990c9,#015da6); }
 
 /* 	PROJECT SECTION 	*/
-section.projects { height:640px; }
+section.projects { height:640px; 
+	-webkit-touch-callout: none; 
+	-webkit-user-select:none; 
+	-khtml-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none; }
 
 	section.projects .banner { position:relative; overflow:auto; }
 		section.projects .banner li { list-style:none; display:table-cell; }
@@ -178,6 +190,8 @@ section.projects { height:640px; }
 /* 	STAFF SECTION 	*/
 section.staff { height:750px; } 
 
+	section.staff h1 { padding-top:30px; }
+
 	section.staff ul { display:table-cell; 
 		padding-top:20px; }
 	section.staff ul li { display:inline-block; 
@@ -190,10 +204,11 @@ section.staff { height:750px; }
 			display:block; 
 			width:120px; height:120px; 
 			margin:15px; 
+			background-size:cover; 
 			background-repeat:no-repeat; 
 			background-position:center center; 
 			border-radius:120px; 
-			border:5px solid #fff; 
+			border:4px solid #fff; 
 			box-shadow:0px 0px 10px #111; } 
 		section.staff ul li p { 
 			width:120px; 
@@ -214,3 +229,10 @@ section.footer { height:300px;
 
 		section.footer .logo#ctl { background-image:url('../_imgs/logos/ctl.png'); }
 		section.footer .logo#ut2 { background-image:url('../_imgs/logos/ut2.png'); }
+
+	section.footer ul, 
+	section.footer ul li { list-style:none; 
+		list-style-type:none; }
+
+	section.footer a { color:#08f; }
+	section.footer a:hover { color:#2af; }
