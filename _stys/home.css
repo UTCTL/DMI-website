@@ -188,9 +188,9 @@ section.projects { height:640px;
 			background-image:url('../_imgs/arrow_left.png'); }
 
 /* 	STAFF SECTION 	*/
-section.staff { height:750px; } 
+section.staff { height:790px; } 
 
-	section.staff h1 { padding-top:30px; }
+	section.staff h1 { padding-top:20px; }
 
 	section.staff ul { display:table-cell; 
 		padding-top:20px; }

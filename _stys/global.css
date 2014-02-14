@@ -36,11 +36,11 @@ nav { display:block;
 	nav .menu li#logo { display:table-cell; 
 		/*width:110px; */
 		width:50px; 
-		padding:0px 5px 0px 70px;  
+		padding:3px 5px 0px 70px;  
 		background-image:url('../_imgs/logo_small.png'); 
-		/*background-position:0px 1px; */
-		position:relative; 
-		top:1px; 
+		background-position:0px 1px; 
+		/*position:relative; 
+		top:3px; */
 		border-right:1px solid #333; 
 		color:#fafafa; 
 		font-weight:bold; 
