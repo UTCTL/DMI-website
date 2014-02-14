@@ -39,15 +39,16 @@ section.about { height:730px;
 			font-size:22pt; }
 
 /* 	INTERNSHIP SECTION 	*/
-section.internship { height:1050px; 
-	background-image:url('../_imgs/students.png'); 
+section.internship { height:810px; 
+	background-image:url('../_imgs/students2.png'); 
 	background-repeat:no-repeat; 
-	background-position:50% 40px; }
+	background-position:560px 100px; }
 
 	section.internship .description { display:inline-block; 
-		width:400px; 
-		padding:15px 89px; 
-		float:right; 
+		/*border:1px solid red; */
+		width:500px; 
+		padding:15px; /* 89px; */
+		float:left; 
 		text-align:left; 
 		line-height:30px; }
 
@@ -73,26 +74,32 @@ section.internship { height:1050px;
 
 /* 	COMPANIES SECTION 	*/
 section.companies { background-color:#363636; 
-	height:192px; 
+	height:330px; /*192px; */
 	padding:0px; 
 	box-shadow:0px 20px 10px #000; } 
 	
 	section.companies content { padding:0px; } 
 
+	section.companies content h1 { font-size:20pt; 
+		padding:30px 0px 20px 0px; }
+
 	section.companies content .label { display:table-cell; 
+		display:none; 
 		width:100px; 
 		height:192px; 
 		font-family:Lucida Grande, Arial; 
 		font-size:14px; 
 		vertical-align:middle; 
-		padding:0px 50px 0px 50px; }
+		padding:0px 50px 340px 50px; }
 	section.companies content .logos { display:table-cell; 
-		width:800px; height:192px; 
-		border-left:1px solid #444; }
+		width:1000px; height:530px; /*192px; */
+		position:absolute; 
+		left:50%; margin-left:-500px; 
+		/*border-left:1px solid #444;*/ }
 
 		section.companies content .logos li.logo { display:inline-block; 
-			width:120px; height:120px; 
-			margin-top:36px; 
+			/*width:120px;*/ height:80px; width:125px; 
+			/*margin-top:16px; */
 			list-style:none; 
 			background-position:center center; }
 
@@ -100,8 +107,21 @@ section.companies { background-color:#363636;
 			li.logo#frog { background-image:url('../_imgs/logos/frog.png'); }
 			li.logo#mutual { background-image:url('../_imgs/logos/mutual.png'); }
 			li.logo#myedu { background-image:url('../_imgs/logos/myedu.png'); 
-				width:200px; }
-			li.logo#hack { background-image:url('../_imgs/logos/hack.png'); }
+				/*width:200px;*/ }
+			li.logo#hack { background-image:url('../_imgs/logos/hack.png'); } 
+
+			li.logo#four { background-image:url('../_imgs/logos/4kitchens.png'); }
+			li.logo#artsnlabor { background-image:url('../_imgs/logos/artsnlabor.png'); 
+				/*width:160px;*/ }
+			li.logo#enspire { background-image:url('../_imgs/logos/enspire.png'); }
+			li.logo#houndstooth { background-image:url('../_imgs/logos/houndstooth.png'); }
+			li.logo#return { background-image:url('../_imgs/logos/returnpath.png'); 
+				/*width:200px;*/ }
+			li.logo#thirteen { background-image:url('../_imgs/logos/thirteen23.png'); }
+			li.logo#utcofa { background-image:url('../_imgs/logos/utcofa.png'); }
+			li.logo#utlibarts { background-image:url('../_imgs/logos/utlibarts.png'); }
+			li.logo#utlibs { background-image:url('../_imgs/logos/utlibs.png'); }
+			li.logo#dmi { background-image:url('../_imgs/logos/dmi.png'); } 
 
 /* 	APPLY SECTION 	*/
 section.apply { height:440px; 
