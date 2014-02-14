@@ -36,7 +36,9 @@ nav { display:block;
 	nav .menu li#logo { display:table-cell; 
 		/*width:110px; */
 		width:50px; 
-		padding:3px 5px 0px 70px;  
+		height:60px; 
+		overflow:hidden; 
+		padding:0px 5px 0px 70px;  
 		background-image:url('../_imgs/logo_small.png'); 
 		background-position:0px 1px; 
 		/*position:relative; 
@@ -47,6 +49,10 @@ nav { display:block;
 		font-size:14pt; 
 		font-family:Segan; 
 		vertical-align:top; } 
+
+		nav .menu li#logo #dmi { position:relative; 
+			top:3px; }
+
 	nav .menu li#logo:hover { background-color:transparent !important; } 
 
 	nav .menu li.selected { background-color:#111; 
@@ -70,15 +76,16 @@ a { text-decoration:none;
 	color:#09f; } 
 a:hover { color:#3bf; }
 
-h1 { font-size:50px; 
+h1 { font-size:56px; 
 	font-weight:normal; 
 	color:#fff; 
-	background:-webkit-linear-gradient(#fff,#bbb); 
+	/*background:-webkit-linear-gradient(#fff,#bbb); 
 	-webkit-background-clip:text; 
-	-webkit-text-fill-color:transparent; 
+	-webkit-text-fill-color:transparent; */
 	line-height:60px; } 
 
-h2 { font-size:28px; 
+h2 { font-size:24px; 
 	font-weight:normal; 
-	color:#9c9b9c; 
+	/*color:#acabac; */
+	color:#9bcbf5;
 	line-height:40px; }
