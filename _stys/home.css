@@ -1,7 +1,7 @@
 section:nth-of-type(1) { margin-top:60px; } 
 
 /* 	ABOUT SECTION 	*/
-section.about { height:720px;  
+section.about { height:730px;  
 	background-image:url('../_imgs/banner.jpg'); 
 	background-size:cover; 
 	background-position:center center; }
@@ -26,19 +26,17 @@ section.about { height:720px;
 		background-position:center top; }
 
 	section.about content .overlay { width:600px; 
-		margin-top:20px; 
+		margin-top:30px; 
 		height:20px; 
 		vertical-align:middle;
 		padding:25px 0px; 
 		font-size:18pt; 
-		/*font-weight:bold; */
 		background-color:rgba(0,0,0,.6); }
 
 		section.about .overlay #top-date {
 			color:#6cbafd; 
 			font-weight:bold; 
-			font-size:22pt; 
-		}
+			font-size:22pt; }
 
 /* 	INTERNSHIP SECTION 	*/
 section.internship { height:1050px; 
