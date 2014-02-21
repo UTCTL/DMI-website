@@ -8,7 +8,9 @@ body { color:#fff;
 	font-size:11pt; 
 	font-weight:normal; 
 	line-height:20px; 
-	background-color:#292929; } 
+	background-color:#292929; 
+	background-image:url('../_imgs/bg.png');
+	background-repeat:repeat; } 
 
 nav { display:block; 
 	position:fixed; 

@@ -71,7 +71,7 @@ section.companies { background-color:#363636;
 	background-repeat:repeat; 
 	height:330px; /*192px; */
 	padding:0px; 
-	box-shadow:0px 20px 10px #000; } 
+	/*box-shadow:0px 20px 10px #000;*/ } 
 	
 	section.companies content { padding:0px; } 
 
@@ -87,7 +87,7 @@ section.companies { background-color:#363636;
 		vertical-align:middle; 
 		padding:0px 50px 340px 50px; }
 	section.companies content .logos { display:table-cell; 
-		width:1000px; height:530px; /*192px; */
+		width:1000px; /*height:530px;*/ /*192px; */
 		position:absolute; 
 		left:50%; margin-left:-500px; 
 		/*border-left:1px solid #444;*/ }
@@ -119,19 +119,58 @@ section.companies { background-color:#363636;
 			li.logo#dmi { background-image:url('../_imgs/logos/dmi.png'); } 
 
 /* 	APPLY SECTION 	*/
-section.apply { height:440px; 
-	background-color:#262626; } 
+section.apply { } 
 	
 	section.apply #deadline { color:#ddd; }
 
-	section.apply .description { display:inline-block; 
-		width:320px; 
-		padding:15px 89px; 
-		margin:30px 0px; 
-		float:left; 
-		font-size:10pt; }
+	section.apply .description { display:block; }
 
-		section.apply .description:nth-of-type(1) { 
+	section.apply .description .steps { display:block; 
+		padding:20px 0px; 
+		padding-left:30px; 
+		margin-top:20px; 
+		margin-bottom:20px; 
+		/*border:1px solid yellow; */
+		border-bottom:1px solid #777; }
+
+	section.apply .description .step { display:table-cell;  
+		/*position:relative; left:10px; */
+		width:205px; 
+		padding:20px; 
+		margin-right:5px; 
+		/*margin:30px 0px; */ 
+		/*float:left; */
+		color:#fff; 
+		font-size:10pt; 
+		text-align:left; 
+		/*border:1px solid red;*/ } 
+
+		section.apply .step .step-name { display:block; 
+			color:#8cf; 
+			font-size:14pt; } 
+
+			.step .step-name .num { display:inline-block; 
+				position:relative; top:5px; left:-3px; 
+				margin-left:-30px; 
+				margin-right:5px; 
+				width:12px; height:12px; 
+				padding:5px 4px 6px 6px; 
+				border:1px solid #8cf; 
+				border-radius:50px; } 
+
+	section.apply .description p { width:570px; 
+		margin:auto; 
+		font-size:12pt; 
+		text-align:center; 
+		color:#999; 
+		padding:20px 0px; } 
+
+	section.apply .description .note { font-size:9pt; 
+		text-align:left; 
+		color:#444; 
+		padding-top:20px; }
+
+		/*section.apply .description:nth-of-type(1) { 
 			border-right:1px solid #444; }
 
 		section.apply .button { display:block; 
@@ -154,7 +193,7 @@ section.apply { height:440px;
 				background:-webkit-linear-gradient(#5bb1eb,#137fc8); }
 			section.apply .button:active { 
 				border:1px solid #04e; 
-				background:-webkit-linear-gradient(#3990c9,#015da6); }
+				background:-webkit-linear-gradient(#3990c9,#015da6); }*/
 
 /* 	ABOUT SECTION 	*/
 section.about { height:730px;  
