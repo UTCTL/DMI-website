@@ -288,11 +288,13 @@ section.projects { height:640px;
 			font-weight:normal; 
 			letter-spacing:1px; 
 			line-height:30px; 
-			padding-top:30px; }
+			padding-top:30px; 
+			text-shadow:1px 1px 10px #000, -1px -1px 10px #000; }
 
 		section.projects .project-content h1, 
 		section.projects .project-content p { width:600px; 
-			text-align:center; }
+			text-align:center; 
+			cursor:pointer; }
 
 	section.projects .dots { z-index:998; 
 		position:absolute; 
