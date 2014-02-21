@@ -208,31 +208,52 @@ section.tagline { background-image:url('../_imgs/bg_block_blue.png');
 		padding:30px 0px; }
 
 /* 	ABOUT SECTION 	*/
-section.about { height:730px;  
-	background-image:url('../_imgs/banner.jpg'); 
-	background-size:cover; 
-	background-position:center center; }
+section.about { /*height:730px;  */
+	background-image:url('../_imgs/bg_block.png'); 
+	background-repeat:repeat; } 
 
-	section.about content {  } 
+	section.about h2 { padding-bottom:40px; } 
 
-	section.about content .play-button { display:block; 
-		height:280px; }
+	section.about content .play-button { display:table-cell; 
+		width:400px; 
+		vertical-align:top; 
+		padding:0px 20px; } 
+
+		section.about content .play-button .thumbnail { display:block; 
+			width:400px; height:220px; 
+			background-image:url('../_imgs/video_play.png'); 
+			background-repeat:no-repeat; 
+			background-position:center 0px; 
+			cursor:pointer; } 
+
+		section.about content .play-button .thumbnail:hover {
+			background-position:center -220px; }
+
+
+	section.about content .description { display:table-cell; 
+		width:560px; 
+		vertical-align:top; } 
 
 	section.about content .text#intro-text { display:block; 
-		position:absolute; 
+		/*position:absolute; 
 		left:50%; 
-		margin-left:-320px; 
-		width:600px; 
+		margin-left:-320px; */
+		width:560px; 
 		color:#fff; 
-		line-height:28px; 
+		line-height:32px; 
+		font-size:14pt; 
 		letter-spacing:1px; 
-		/*border:1px solid red; */
-		padding:20px; 
-		background-image:url('../_imgs/about_gradient.png'); 
-		background-repeat:no-repeat; 
-		background-position:center top; }
+		/*border:1px solid red; */ 
+		/*background-image:url('../_imgs/about_gradient.png'); */
+		text-align:left; 
+		/*background-repeat:no-repeat; 
+		background-position:center top;*/ } 
 
-	section.about content .overlay { width:600px; 
+		section.about .text p { display:block; 
+			padding:20px 0px; 
+			text-align:center; } 
+
+	/*section.about content .overlay { width:600px; 
 		margin-top:30px; 
 		height:20px; 
 		vertical-align:middle;
@@ -243,7 +264,7 @@ section.about { height:730px;
 		section.about .overlay #top-date {
 			color:#6cbafd; 
 			font-weight:bold; 
-			font-size:22pt; }
+			font-size:22pt; }*/
 
 /* 	PROJECT SECTION 	*/
 section.projects { height:640px; 
