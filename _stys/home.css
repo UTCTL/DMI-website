@@ -69,6 +69,7 @@ section.internship {
 section.companies { background-color:#363636; 
 	background-image:url('../_imgs/bg_block.png'); 
 	background-repeat:repeat; 
+	background-attachment:fixed; 
 	height:330px; /*192px; */
 	padding:0px; 
 	/*box-shadow:0px 20px 10px #000;*/ } 
@@ -131,7 +132,7 @@ section.apply { }
 		margin-top:20px; 
 		margin-bottom:20px; 
 		/*border:1px solid yellow; */
-		border-bottom:1px solid #777; }
+		border-bottom:1px solid #333; }
 
 	section.apply .description .step { display:table-cell;  
 		/*position:relative; left:10px; */
@@ -194,6 +195,17 @@ section.apply { }
 			section.apply .button:active { 
 				border:1px solid #04e; 
 				background:-webkit-linear-gradient(#3990c9,#015da6); }*/
+
+/* 	GLOBAL TAGLINE 	*/ 
+section.tagline { background-image:url('../_imgs/bg_block_blue.png'); 
+	background-repeat:repeat; 
+	background-attachment:fixed; 
+	font-size:22pt; 
+	line-height:50px; 
+	text-shadow:0px 0px 10px rgba(0,200,255,.6); } 
+
+	section.tagline content { width:800px; 
+		padding:30px 0px; }
 
 /* 	ABOUT SECTION 	*/
 section.about { height:730px;  
