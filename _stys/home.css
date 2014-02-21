@@ -67,6 +67,8 @@ section.internship {
 
 /* 	COMPANIES SECTION 	*/
 section.companies { background-color:#363636; 
+	background-image:url('../_imgs/bg_block.png'); 
+	background-repeat:repeat; 
 	height:330px; /*192px; */
 	padding:0px; 
 	box-shadow:0px 20px 10px #000; } 
