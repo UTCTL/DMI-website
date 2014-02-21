@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	setup_scrolling(); 
 	setup_slider(); 
+	setup_lightbox(); 
 
 	$(window).load(function() {
 		set_project_content_size($(window).width()); 
@@ -124,3 +125,15 @@ function change_nav_state(focus) {
 	$('nav .menu li').removeClass('selected'); 
 	$('nav .menu li#'+focus).addClass('selected'); 
 }
+
+function setup_lightbox() {
+	$('.thumbnail').fancybox({
+		width:700, 
+		height:400, 
+		helpers: {
+			overlay: {locked:false} 
+		}, 
+		type: 'iframe', 
+		fitToView: false 
+	});
+} 
