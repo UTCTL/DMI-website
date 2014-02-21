@@ -28,7 +28,7 @@ nav { display:block;
 		color:#aaa;
 		cursor:pointer; } 
 	nav .menu li:not(:nth-of-type(1)) {
-		padding:20px; }
+		padding:20px 25px; }
 	nav .menu li:hover { background-color:#222; 
 		color:#fff; }
 
@@ -38,20 +38,21 @@ nav { display:block;
 		width:50px; 
 		height:60px; 
 		overflow:hidden; 
-		padding:0px 5px 0px 70px;  
+		padding:0px 15px 0px 65px;  
 		background-image:url('../_imgs/logo_small.png'); 
-		background-position:0px 1px; 
+		background-position:0px 2px; 
 		/*position:relative; 
 		top:3px; */
 		border-right:1px solid #333; 
 		color:#fafafa; 
 		font-weight:bold; 
-		font-size:14pt; 
-		font-family:Segan; 
-		vertical-align:top; } 
+		font-size:12pt; 
+		font-family:Lucida Grande, Arial; 
+		line-height:16px; 
+		vertical-align:middle; } 
 
-		nav .menu li#logo #dmi { position:relative; 
-			top:3px; }
+		/*nav .menu li#logo #dmi { position:relative; 
+			top:3px; }*/
 
 	nav .menu li#logo:hover { background-color:transparent !important; } 
 
