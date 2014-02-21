@@ -15,76 +15,54 @@ section.utctl { height:80px;
 		section.utctl .small_logo#sm-ut { background-image:url('../_imgs/logo_ut_small.png'); } 
 		section.utctl .small_logo#sm-ctl { background-image:url('../_imgs/logo_ctl_small.png'); } 
 
-/* 	ABOUT SECTION 	*/
-section.about { height:730px;  
-	background-image:url('../_imgs/banner.jpg'); 
-	background-size:cover; 
-	background-position:center center; }
-
-	section.about content {  } 
-
-	section.about content .play-button { display:block; 
-		height:280px; }
-
-	section.about content .text#intro-text { display:block; 
-		position:absolute; 
-		left:50%; 
-		margin-left:-320px; 
-		width:600px; 
-		color:#fff; 
-		line-height:28px; 
-		letter-spacing:1px; 
-		/*border:1px solid red; */
-		padding:20px; 
-		background-image:url('../_imgs/about_gradient.png'); 
-		background-repeat:no-repeat; 
-		background-position:center top; }
-
-	section.about content .overlay { width:600px; 
-		margin-top:30px; 
-		height:20px; 
-		vertical-align:middle;
-		padding:25px 0px; 
-		font-size:18pt; 
-		background-color:rgba(0,0,0,.6); }
-
-		section.about .overlay #top-date {
-			color:#6cbafd; 
-			font-weight:bold; 
-			font-size:22pt; }
-
 /* 	INTERNSHIP SECTION 	*/
-section.internship { height:810px; 
-	background-image:url('../_imgs/students2.png'); 
-	background-repeat:no-repeat; 
-	background-position:560px 100px; }
+section.internship { 
+	background-image:url('../_imgs/banner_internship.png'); 
+	/*background-repeat:no-repeat; */
+	background-size:cover; 
+	background-position:center center; 
+	padding-bottom:0px; }
+
+	section.internship content { padding-bottom:0px; }
 
 	section.internship .description { display:inline-block; 
 		/*border:1px solid red; */
-		width:500px; 
-		padding:15px; /* 89px; */
-		float:left; 
-		text-align:left; 
-		line-height:30px; }
+		width:730px; 
+		padding:40px; /* 89px; */
+		float:center; 
+		line-height:30px; } 
 
-		section.internship .description p { padding:20px 0px; }
-		section.internship .description .calendar { 
-			text-align:center; }
+		section.internship .description p { 
+			width:100%; 
+			font-size:14pt; 
+			text-shadow:0px 0px 6px #000; 
+			padding:20px 0px; }
+		section.internship .description p:not(:nth-of-type(1)) { 
+			width:600px; 
+			font-size:11pt; 
+			color:#ddd; 
+			line-height:20px; 
+			padding:20px 0px; 
+			margin:auto; 
+			text-align:center; } 
 
-			section.internship .calendar #mark { display:block; 
-				width:250px; 
-				margin:auto; 
-				border-bottom:1px solid #444; }
-			section.internship .calendar table { margin:10px auto; 
-				padding-left:5px; }
-			section.internship .calendar #date { display:table-cell; 
-				font-size:32pt; } 
-			section.internship .calendar #time { display:block; 
-				color:#ddd; 
-				line-height:12px; 
-				margin-top:8px; }
-			section.internship .calendar #location { display:block; 
-				color:#51a1d6; }
+	section.internship .calendar { background-color:rgba(0,0,0,0.4); 
+		padding-top:8px; }
+		section.internship .calendar content { padding:10px 0px; } 
+		section.internship .calendar table { display:block; 
+			margin:10px auto; 
+			font-size:14pt; } 
+		section.internship .calendar #date { display:table-cell; 
+			font-size:32pt; } 
+		section.internship .calendar #time { display:block; 
+			color:#ddd; 
+			line-height:12px; 
+			font-weight:bold; 
+			margin-top:-3px;
+			margin-bottom:8px; } 
+		section.internship .calendar #location { display:block; 
+			font-weight:bold; 
+			color:#51a1d6; } 
 
 
 /* 	COMPANIES SECTION 	*/
@@ -175,6 +153,44 @@ section.apply { height:440px;
 			section.apply .button:active { 
 				border:1px solid #04e; 
 				background:-webkit-linear-gradient(#3990c9,#015da6); }
+
+/* 	ABOUT SECTION 	*/
+section.about { height:730px;  
+	background-image:url('../_imgs/banner.jpg'); 
+	background-size:cover; 
+	background-position:center center; }
+
+	section.about content {  } 
+
+	section.about content .play-button { display:block; 
+		height:280px; }
+
+	section.about content .text#intro-text { display:block; 
+		position:absolute; 
+		left:50%; 
+		margin-left:-320px; 
+		width:600px; 
+		color:#fff; 
+		line-height:28px; 
+		letter-spacing:1px; 
+		/*border:1px solid red; */
+		padding:20px; 
+		background-image:url('../_imgs/about_gradient.png'); 
+		background-repeat:no-repeat; 
+		background-position:center top; }
+
+	section.about content .overlay { width:600px; 
+		margin-top:30px; 
+		height:20px; 
+		vertical-align:middle;
+		padding:25px 0px; 
+		font-size:18pt; 
+		background-color:rgba(0,0,0,.6); }
+
+		section.about .overlay #top-date {
+			color:#6cbafd; 
+			font-weight:bold; 
+			font-size:22pt; }
 
 /* 	PROJECT SECTION 	*/
 section.projects { height:640px; 

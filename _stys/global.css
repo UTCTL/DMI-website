@@ -78,7 +78,8 @@ a { text-decoration:none;
 	color:#09f; } 
 a:hover { color:#3bf; }
 
-h1 { font-size:56px; 
+h1 { font-family:Segan; 
+	font-size:56px; 
 	font-weight:normal; 
 	color:#fff; 
 	/*background:-webkit-linear-gradient(#fff,#bbb); 
@@ -86,8 +87,10 @@ h1 { font-size:56px;
 	-webkit-text-fill-color:transparent; */
 	line-height:60px; } 
 
-h2 { font-size:24px; 
+h2 { font-family:Segan; 
+	font-size:28px; 
 	font-weight:normal; 
-	/*color:#acabac; */
-	color:#9bcbf5;
+	color:#a2a2a2; 
+	text-shadow:0px 0px 10px #000; 
+	/*color:#9bcbf5;*/
 	line-height:40px; }
