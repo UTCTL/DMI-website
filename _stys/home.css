@@ -347,8 +347,9 @@ section.staff { height:790px; }
 
 		section.staff ul li div { 
 			display:block; 
-			width:120px; height:120px; 
+			width:96px; height:96px; 
 			margin:15px; 
+			margin-left:30px; 
 			background-size:cover; 
 			background-repeat:no-repeat; 
 			background-position:center center; 
