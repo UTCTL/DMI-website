@@ -1,5 +1,20 @@
 section:nth-of-type(1) { margin-top:60px; } 
 
+/* CTLUT LOGO SECTION */ 
+section.utctl { height:80px; 
+	background-image:url('../_imgs/bg_block_grad.png'); 
+	background-repeat:repeat-x; 
+	/*border:1px solid red;*/ } 
+
+	section.utctl content { padding:0px; 
+		text-align:right; }
+
+	section.utctl .small_logo { display:inline-block; 
+		width:170px; height:80px; 
+		background-position:center center; }
+		section.utctl .small_logo#sm-ut { background-image:url('../_imgs/logo_ut_small.png'); } 
+		section.utctl .small_logo#sm-ctl { background-image:url('../_imgs/logo_ctl_small.png'); } 
+
 /* 	ABOUT SECTION 	*/
 section.about { height:730px;  
 	background-image:url('../_imgs/banner.jpg'); 
