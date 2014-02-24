@@ -38,8 +38,7 @@ section { background-repeat:repeat; }
 			display:block; 
 			width:600px; 
 			margin-bottom:5px; 
-			border:5px solid #fff; 
-		}
+			border:5px solid #fff; }
 
 		.project-content .screenshot .caption { 
 			display:block; 
@@ -48,5 +47,14 @@ section { background-repeat:repeat; }
 			font-weight:normal; 
 			font-size:9pt; 
 			color:#777; 
-			padding:0px 20px; 
-		}
+			padding:0px 20px; }
+
+		.project-content .screenshot .thumbnail { 
+			display:block; 
+			cursor:pointer; 
+			background-position:0px 0px; 
+			width:600px; } 
+
+		.thumbnail#ctp1 { height:375px; 
+			background-image:url('../_imgs/projects/ctp/vid1.png'); }
+		.thumbnail#ctp1:hover { background-position:0px -375px; }

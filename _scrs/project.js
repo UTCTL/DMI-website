@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	setup_navbar(); 
+	setup_lightbox(); 
 
 	$(window).scroll(function() {
 		setup_banner(); 
@@ -72,6 +73,23 @@ function scroll_animated(id,animation,actual) {
 		scrollTop: qty 
 	},0,'swing'); 
 }
+
+function setup_lightbox() {
+	$('.thumbnail').fancybox({
+		width:700, 
+		height:400, 
+		helpers: {
+			overlay: {locked:false}, 
+			title: { type:'inside' }, 
+			thumbs: { 
+				width:700, 
+				height:400 
+			}
+		}, 
+		type: 'iframe', 
+		fitToView: false 
+	}); 
+} 
 
 function setup_banner() {
 	var top = $(window).scrollTop(); 
