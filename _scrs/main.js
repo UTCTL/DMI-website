@@ -2,9 +2,11 @@ $(document).ready(function() {
 	setup_scrolling(); 
 	setup_slider(); 
 	setup_lightbox(); 
+	setup_projects(); 
 
 	$(window).load(function() {
 		set_project_content_size($(window).width()); 
+		read_url(); 
 	}); 
 }); 
 
@@ -131,9 +133,30 @@ function setup_lightbox() {
 		width:700, 
 		height:400, 
 		helpers: {
-			overlay: {locked:false} 
+			overlay: {locked:false}, 
+			title: { type:'inside' }, 
+			thumbs: { 
+				width:700, 
+				height:400 
+			}
 		}, 
 		type: 'iframe', 
 		fitToView: false 
-	});
+	}); 
+} 
+
+function setup_projects() {
+	$('.project-content').click(function() {
+		var id = $(this).attr('id'); 
+		window.location.assign('projects.html#'+id);
+	}); 
+}
+
+function read_url() {
+	var url = window.location.href;  
+	var n = url.lastIndexOf('#'); 
+
+	if(n>-1) scroll_to(url.substring(n+1)); 
+
+	window.history.pushState("","Digital Media Institute",url.substring(0,n)); 
 } 

@@ -1,5 +1,3 @@
-section:nth-of-type(1) { margin-top:60px; } 
-
 /* CTLUT LOGO SECTION */ 
 section.utctl { height:80px; 
 	background-image:url('../_imgs/bg_block_grad.png'); 
@@ -282,7 +280,8 @@ section.projects { height:640px;
 			background-repeat:no-repeat; 
 			background-position:center center; }
 
-	section.projects .project-content { padding-top:200px }
+	section.projects .project-content { padding-top:200px;
+			cursor:pointer;  }
 
 		section.projects .project-content p { font-size:14pt; 
 			font-weight:normal; 
@@ -293,8 +292,7 @@ section.projects { height:640px;
 
 		section.projects .project-content h1, 
 		section.projects .project-content p { width:600px; 
-			text-align:center; 
-			cursor:pointer; }
+			text-align:center; }
 
 	section.projects .dots { z-index:998; 
 		position:absolute; 
@@ -365,24 +363,3 @@ section.staff { height:790px; }
 	section.staff a { color:#666; } 
 	section.staff a:hover { color:#ccc; 
 		text-shadow:0px 0px 10px #09f; }
-
-/* 	FOOTER SECTION 	*/
-section.footer { height:300px; 
-	font-size:9pt; 
-	background-color:#252525; } 
-
-	section.footer .logo { display:block; 
-		width:300px; 
-		height:80px; 
-		background-position:center center; 
-		background-repeat:no-repeat; }
-
-		section.footer .logo#ctl { background-image:url('../_imgs/logos/ctl.png'); }
-		section.footer .logo#ut2 { background-image:url('../_imgs/logos/ut2.png'); }
-
-	section.footer ul, 
-	section.footer ul li { list-style:none; 
-		list-style-type:none; }
-
-	section.footer a { color:#08f; }
-	section.footer a:hover { color:#2af; }

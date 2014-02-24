@@ -66,6 +66,7 @@ nav { display:block;
 section { display:block; 
 	/*height:300px; */
 	z-index:20; }
+	section:nth-of-type(1) { margin-top:60px; } 
 
 content { display:block; 
 	/*position:absolute; */ 
@@ -96,3 +97,26 @@ h2 { font-family:Segan;
 	text-shadow:0px 0px 10px #000; 
 	/*color:#9bcbf5;*/
 	line-height:40px; }
+
+
+
+/* 	FOOTER SECTION 	*/
+section.footer { height:300px; 
+	font-size:9pt; 
+	background-color:#252525; } 
+
+	section.footer .logo { display:block; 
+		width:300px; 
+		height:80px; 
+		background-position:center center; 
+		background-repeat:no-repeat; }
+
+		section.footer .logo#ctl { background-image:url('../_imgs/logos/ctl.png'); }
+		section.footer .logo#ut2 { background-image:url('../_imgs/logos/ut2.png'); }
+
+	section.footer ul, 
+	section.footer ul li { list-style:none; 
+		list-style-type:none; }
+
+	section.footer a { color:#08f; }
+	section.footer a:hover { color:#2af; }
