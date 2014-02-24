@@ -11,7 +11,7 @@ $(document).ready(function() {
 }); 
 
 function setup_navbar() { 
-	$('nav li').click(function(e) {
+	$('nav li, .footer .on-site li a').click(function(e) {
 		e.preventDefault(); 
 		var id = $(this).attr('id'); 
 		if(id=="logo") 

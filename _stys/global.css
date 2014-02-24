@@ -101,14 +101,14 @@ h2 { font-family:Segan;
 
 
 /* 	FOOTER SECTION 	*/
-section.footer { height:300px; 
+section.footer { /*height:300px; */
 	font-size:9pt; 
 	background-color:#252525; } 
 
 	section.footer .logo { display:block; 
 		width:300px; 
 		height:80px; 
-		background-position:center center; 
+		background-position:center top; 
 		background-repeat:no-repeat; }
 
 		section.footer .logo#ctl { background-image:url('../_imgs/logos/ctl.png'); }

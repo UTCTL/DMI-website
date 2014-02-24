@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 // Seting up navigation bar scrolling
 function setup_scrolling() {
-	$('nav .menu li').click(function(e) { 
+	$('nav .menu li, .footer .on-site li a').click(function(e) { 
 		e.preventDefault(); 
 		var id = $(this).attr('id'); 
 		if(id=="logo") id = "about"; 
