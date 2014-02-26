@@ -327,9 +327,9 @@ section.projects { height:640px;
 		section.projects .arrow:hover { background-position:0px -120px; }
 		section.projects .arrow:active { background-position:0px -240px; }
 
-		.arrow#right { right:50px; 
+		.arrow-right, .arrow#right { right:50px; 
 			background-image:url('../_imgs/arrow_right.png'); }
-		.arrow#left { left:50px; 
+		.arrow-left, .arrow#left { left:50px; 
 			background-image:url('../_imgs/arrow_left.png'); }
 
 /* 	STAFF SECTION 	*/
