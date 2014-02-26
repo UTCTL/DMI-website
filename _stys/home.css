@@ -12,6 +12,23 @@ section.utctl { height:80px;
 		background-position:center center; }
 		section.utctl .small_logo#sm-ut { background-image:url('../_imgs/logo_ut_small.png'); } 
 		section.utctl .small_logo#sm-ctl { background-image:url('../_imgs/logo_ctl_small.png'); } 
+	
+	section.utctl .calendar { padding-top:8px; }
+		section.utctl .calendar content { padding:10px 0px; } 
+		section.utctl .calendar table { display:block; 
+			margin:10px auto; 
+			font-size:14pt; } 
+		section.utctl .calendar #date { display:table-cell; 
+			font-size:32pt; } 
+		section.utctl .calendar #time { display:block; 
+			color:#ddd; 
+			line-height:12px; 
+			font-weight:bold; 
+			margin-top:-3px;
+			margin-bottom:8px; } 
+		section.utctl .calendar #location { display:block; 
+			font-weight:bold; 
+			color:#51a1d6; } 
 
 /* 	INTERNSHIP SECTION 	*/
 section.internship { 

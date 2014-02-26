@@ -23,7 +23,8 @@ nav { display:block;
 	font-family:Lucida Grande, Arial; 
 	z-index:999; } 
 
-	nav content { text-align:left; }
+	nav content { text-align:left; 
+		padding:0px; }
 
 	nav .menu li { display:table-cell; 
 		list-style-type:none; 
@@ -62,7 +63,16 @@ nav { display:block;
 	nav .menu li.selected { background-color:#111; 
 		color:#fff; }
 
-	nav content { padding:0px; }
+	nav .menu { display:inline-block; 
+		float:left; }
+	nav .small_logo { display:inline-block; 
+		width:170px; height:80px; 
+		background-position:center center; 
+		float:right; 
+		position:relative; 
+		top:-10px; }
+		nav .small_logo#sm-ut { background-image:url('../_imgs/logo_ut_small.png'); } 
+		nav .small_logo#sm-ctl { background-image:url('../_imgs/logo_ctl_small.png'); } 
 
 section { display:block; 
 	/*height:300px; */
