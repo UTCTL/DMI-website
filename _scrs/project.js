@@ -22,7 +22,8 @@ function setup_navbar() {
 	}); 
 }
 
-// function setup_lightbox() {
+function setup_lightbox() {
+	$("a[rel^='prettyPhoto']").prettyPhoto(); 
 // 	$('.thumbnail').fancybox({
 // 		width:700, 
 // 		height:400, 
@@ -37,7 +38,7 @@ function setup_navbar() {
 // 		type: 'iframe', 
 // 		fitToView: false 
 // 	}); 
-// } 
+} 
 
 // function setup_projects() {
 // 	$('.project-content').click(function() {
@@ -74,22 +75,22 @@ function scroll_animated(id,animation,actual) {
 	},0,'swing'); 
 }
 
-function setup_lightbox() {
-	$('.thumbnail').fancybox({
-		width:700, 
-		height:400, 
-		helpers: {
-			overlay: {locked:false}, 
-			title: { type:'inside' }, 
-			thumbs: { 
-				width:700, 
-				height:400 
-			}
-		}, 
-		type: 'iframe', 
-		fitToView: false 
-	}); 
-} 
+// function setup_lightbox() {
+// 	$('.thumbnail').fancybox({
+// 		width:700, 
+// 		height:400, 
+// 		helpers: {
+// 			overlay: {locked:false}, 
+// 			title: { type:'inside' }, 
+// 			thumbs: { 
+// 				width:700, 
+// 				height:400 
+// 			}
+// 		}, 
+// 		type: 'iframe', 
+// 		fitToView: false 
+// 	}); 
+// } 
 
 function setup_banner() {
 	var top = $(window).scrollTop(); 

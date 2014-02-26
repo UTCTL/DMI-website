@@ -140,20 +140,21 @@ function change_nav_state(focus) {
 }
 
 function setup_lightbox() {
-	$('.thumbnail').fancybox({
-		width:700, 
-		height:400, 
-		helpers: {
-			overlay: {locked:false}, 
-			title: { type:'inside' }, 
-			thumbs: { 
-				width:700, 
-				height:400 
-			}
-		}, 
-		type: 'iframe', 
-		fitToView: false 
-	}); 
+	$("a[rel^='prettyPhoto']").prettyPhoto(); 
+	// $('.thumbnail').fancybox({
+	// 	width:700, 
+	// 	height:400, 
+	// 	helpers: {
+	// 		overlay: {locked:false}, 
+	// 		title: { type:'inside' }, 
+	// 		thumbs: { 
+	// 			width:700, 
+	// 			height:400 
+	// 		}
+	// 	}, 
+	// 	type: 'iframe', 
+	// 	fitToView: false 
+	// }); 
 } 
 
 function setup_projects() {
