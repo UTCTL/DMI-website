@@ -56,5 +56,6 @@ section { background-repeat:repeat; }
 			width:600px; } 
 
 		.thumbnail#ctp1 { height:375px; 
-			background-image:url('../_imgs/projects/ctp/vid1.png'); }
+			background-image:url('../_imgs/projects/ctp/vid1.jpg');
+			border:5px solid #fff; }
 		.thumbnail#ctp1:hover { background-position:0px -375px; }
