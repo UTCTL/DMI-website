@@ -354,7 +354,7 @@ section.projects { height:640px;
 			background-image:url('../_imgs/arrow_left.png'); }
 
 /* 	STAFF SECTION 	*/
-section.staff { height:790px; } 
+section.staff { } 
 
 	section.staff h1 { padding-top:20px; }
 
@@ -382,6 +382,10 @@ section.staff { height:790px; }
 			margin:0px 15px; 
 			margin-left:20px; 
 			text-align:center; } 
+
+			section.staff ul li p.job-description { 
+				color:#aaa; 
+				font-size:10pt; }
 
 	section.staff a { color:#666; } 
 	section.staff a:hover { color:#ccc; 
