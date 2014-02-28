@@ -114,9 +114,9 @@
 	z-index:899; }*/
 
 /*.bx-prev:hover, .bx-next:hover { background-position:0px -120px; }*/
-.bx-next { right:50px; 
+.bx-next { right:10px; 
 	background-image:url('../../_imgs/arrow_right.png'); }
-.bx-prev { left:50px; 
+.bx-prev { left:10px; 
 	background-image:url('../../_imgs/arrow_left.png'); }
 
 /*.bx-wrapper .bx-prev {
@@ -140,10 +140,10 @@
 .bx-wrapper .bx-controls-direction a { 
 	position:absolute; 
 	top:50%; 
-	margin-top:-60px; 
+	margin-top:-40px; 
 	display:block; 
-	width:55px; 
-	height:120px; 
+	width:35px; 
+	height:76px; 
 	background-position:0px 0px; 
 	background-repeat:no-repeat; 
 	position:absolute; 
@@ -160,8 +160,8 @@
 	z-index: 9999;*/
 }
 
-.bx-wrapper .bx-controls-direction a:hover { background-position:0px -120px; }
-.bx-wrapper .bx-controls-direction a:active { background-position:0px -240px; }
+.bx-wrapper .bx-controls-direction a:hover { background-position:0px -76px; }
+.bx-wrapper .bx-controls-direction a:active { background-position:0px -152px; }
 
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;

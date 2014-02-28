@@ -66,13 +66,17 @@ nav { display:block;
 	nav .menu { display:inline-block; 
 		float:left; }
 	nav .small_logo { display:inline-block; 
-		width:170px; height:80px; 
+		height:80px; 
 		background-position:center center; 
 		float:right; 
 		position:relative; 
 		top:-10px; }
-		nav .small_logo#sm-ut { background-image:url('../_imgs/logo_ut_small.png'); } 
-		nav .small_logo#sm-ctl { background-image:url('../_imgs/logo_ctl_small.png'); } 
+		nav .small_logo#sm-ut { width:100px; 
+			background-image:url('../_imgs/logo_ut_small.png'); 
+			background-position:25px center;
+			padding-left:20px; } 
+		nav .small_logo#sm-ctl { width:170px; 
+			background-image:url('../_imgs/logo_ctl_small.png'); } 
 
 section { display:block; 
 	/*height:300px; */

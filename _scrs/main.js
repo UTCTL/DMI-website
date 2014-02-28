@@ -2,10 +2,10 @@ $(document).ready(function() {
 	setup_scrolling(); 
 	setup_slider(); 
 	setup_lightbox(); 
-	setup_projects(); 
+	// setup_projects(); 
 
 	$(window).load(function() {
-		set_project_content_size($(window).width()); 
+		// set_project_content_size($(window).width()); 
 		read_url(); 
 	}); 
 }); 
@@ -48,7 +48,7 @@ function scroll_animated(id,animation,actual) {
 function setup_slider() {
 	
 	// Formatting the banner and starting slider
-	$('.banner li').css({'height': ($('.projects').height())+'px'}); 
+	$('.projects li').css({'width':'300px','height': '335px'}); 
 	var slider = $('.bxslider').bxSlider({
 		'auto':true, 
 		'pause':5000, 
@@ -87,9 +87,9 @@ function setup_slider() {
 	// }); 
 
 	// Setting size of project content 
-	$(window).resize(function() { 
-		set_project_content_size($(window).width()); 
-	}); 
+	// $(window).resize(function() { 
+	// 	set_project_content_size($(window).width()); 
+	// }); 
 
 }
 
@@ -140,6 +140,7 @@ function change_nav_state(focus) {
 }
 
 function setup_lightbox() {
+	$("li[rel^='prettyPhoto']").prettyPhoto(); 
 	$("a[rel^='prettyPhoto']").prettyPhoto(); 
 	// $('.thumbnail').fancybox({
 	// 	width:700, 
