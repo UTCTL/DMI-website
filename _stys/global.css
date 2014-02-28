@@ -120,7 +120,7 @@ section.footer { font-size:9pt;
 	section.footer ul li { list-style:none; 
 		list-style-type:none; }
 
-	section.footer a { color:#def; }
+	section.footer a { color:#eee; }
 	section.footer a:hover { color:#2af; }
 
 #author { display:block; 
