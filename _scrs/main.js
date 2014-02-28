@@ -2,10 +2,8 @@ $(document).ready(function() {
 	setup_scrolling(); 
 	setup_slider(); 
 	setup_lightbox(); 
-	// setup_projects(); 
 
 	$(window).load(function() {
-		// set_project_content_size($(window).width()); 
 		read_url(); 
 	}); 
 }); 
@@ -33,11 +31,6 @@ function scroll_animated(id,animation,actual) {
 	var qty = actual; 
 	if(actual<0) qty = $('section.'+id).offset().top-60; 
 
-	// Change selected state of clicked menu item 
-	// $('nav .menu li.selected').removeClass("selected"); 
-	// $('nav .menu li#'+id).addClass("selected"); 
-	// change_nav_state(id); 
-
 	// Scroll to desired location on page
 	$('html,body').animate({ 
 		scrollTop: qty 
@@ -55,42 +48,6 @@ function setup_slider() {
 		'autoStart':true, 
 		'autoHover':true 
 	}); 
-
-	// $('.arrow#right').on('click',slider.goToNextSlide()); 
-	// $('.arrow#left').on('click',slider.goToPrevSlide()); 
-
-
-	// $(function() {
-	// 	var slider = $('.banner').unslider({
-	// 		speed: 500,
-	// 		delay: 5000, 
-	// 		complete: function() {}, 
-	// 		keys: true, 
-	// 		dots: true, 
-	// 		fluid: true 
-	// 	}).data('unslider').play(); 
-	// 	var height = $('.projects').height()-100; 
-	// 	var pos_top = $('.projects').offset().top+(height/2)-($('.arrow').height()/2)+25; 
-
-	// 	$('.dots').css({'top': (height+60)+'px', 'z-index':'998' }); 
-	// 	$('banner li').css({'z-index':'299'}); 
-	// 	$('.arrow').css({ 'top': pos_top+'px' }); 
-	// }); 
-
-	// Activating arrows 
-	// var slider = $('.banner').unslider().data('unslider'); 
-	// $('.arrow#right').on('click',function() {
-	// 	slider.next(); 
-	// }); 
-	// $('.arrow#left').on('click',function() {
-	// 	slider.prev(); 
-	// }); 
-
-	// Setting size of project content 
-	// $(window).resize(function() { 
-	// 	set_project_content_size($(window).width()); 
-	// }); 
-
 }
 
 function set_project_content_size(size) {
@@ -142,20 +99,6 @@ function change_nav_state(focus) {
 function setup_lightbox() {
 	$("li[rel^='prettyPhoto']").prettyPhoto(); 
 	$("a[rel^='prettyPhoto']").prettyPhoto(); 
-	// $('.thumbnail').fancybox({
-	// 	width:700, 
-	// 	height:400, 
-	// 	helpers: {
-	// 		overlay: {locked:false}, 
-	// 		title: { type:'inside' }, 
-	// 		thumbs: { 
-	// 			width:700, 
-	// 			height:400 
-	// 		}
-	// 	}, 
-	// 	type: 'iframe', 
-	// 	fitToView: false 
-	// }); 
 } 
 
 function setup_projects() {

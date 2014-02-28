@@ -3,14 +3,12 @@ section:last-of-type { background-image:url(''); }
 section { background-repeat:repeat; }
 
 .banner { display:table-cell; 
-	/*height:200px; */
 	width:350px; 
 	background-size:cover; 
 	background-position:center center; 
 	vertical-align:top; 
 	text-align:left; 
-	padding-top:20px; 
-	/*border:1px solid blue;*/ } 
+	padding-top:20px; } 
 
 	.banner h1 { font-size:22pt; 
 		line-height:38px; 
@@ -19,18 +17,13 @@ section { background-repeat:repeat; }
 		border-bottom:1px solid #333; } 
 	.banner p { color:#ccc; }
 
-	/*section#Environ .banner { background-image:url('../_imgs/projects/environ.png'); } 
-	section#EdX .banner { background-image:url('../_imgs/projects/edx.png'); } 
-	section#CTP .banner { background-image:url('../_imgs/projects/ctp.png'); } */
-
 .project-content { display:table-cell; 
 	width:600px; 
 	font-size:14pt; 
 	text-align:left; 
 	vertical-align:top; 
 	padding:10px; 
-	padding-left:30px; 
-	/*border:1px solid red;*/ } 
+	padding-left:30px; } 
 
 	.project-content .screenshot { padding-bottom:20px; }
 
