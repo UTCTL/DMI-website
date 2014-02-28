@@ -23,10 +23,12 @@ function setup_scrolling() {
 	}); 
 }
 
+// Calls scroll_animated with defauly params 
 function scroll_to(id) {
 	scroll_animated(id,true,-1); 
 }
 
+// Actual window scrolling function 
 function scroll_animated(id,animation,actual) {
 	var qty = actual; 
 	if(actual<0) qty = $('section.'+id).offset().top-60; 
@@ -56,6 +58,7 @@ function set_project_content_size(size) {
 	$('.dots').css({ 'margin-left':(0-($('.dots').width()/2))+'px' }); 
 } 
 
+// Returns main section being desplayed 
 function get_current_section() {
 	var focus = $(window).scrollTop()+($(window).height()*(1/4)); 
 	var sections = []; 
@@ -78,6 +81,7 @@ function get_current_section() {
 	return null; 
 }
 
+// Change active state of menu options 
 function change_nav_state(focus) {
 	switch(focus) {
 		case null:
@@ -96,18 +100,13 @@ function change_nav_state(focus) {
 	$('nav .menu li#'+focus).addClass('selected'); 
 }
 
+// Setting up detection of lightboxes 
 function setup_lightbox() {
 	$("li[rel^='prettyPhoto']").prettyPhoto(); 
 	$("a[rel^='prettyPhoto']").prettyPhoto(); 
 } 
 
-function setup_projects() {
-	$('.project-content').click(function() {
-		var id = $(this).attr('id'); 
-		window.location.assign('projects.html#'+id);
-	}); 
-}
-
+// Getting url to detect particular section and cleaning it 
 function read_url() {
 	var url = window.location.href;  
 	var n = url.lastIndexOf('#'); 
