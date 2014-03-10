@@ -42,7 +42,7 @@ section.internship {
 
 	section.internship .description { display:inline-block; 
 		width:730px; 
-		padding:40px; 
+		padding:30px; 
 		float:center; 
 		line-height:30px; } 
 
@@ -51,7 +51,18 @@ section.internship {
 			font-size:14pt; 
 			text-shadow:0px 0px 6px #000; 
 			padding:20px 0px; }
-		section.internship .description p:not(:nth-of-type(1)) { 
+			
+		section.internship p.subtext {
+			width:600px; 
+			font-size:11pt; 
+			color:#ddd; 
+			line-height:20px; 
+			padding:20px 0px; 
+			margin:auto; 
+			text-align:center;
+		}
+		/*
+section.internship .description p:not(:nth-of-type(1)) { 
 			width:600px; 
 			font-size:11pt; 
 			color:#ddd; 
@@ -59,6 +70,7 @@ section.internship {
 			padding:20px 0px; 
 			margin:auto; 
 			text-align:center; } 
+*/
 
 	section.internship .calendar { background-color:rgba(0,0,0,0.4); 
 		padding-top:8px; }
@@ -77,6 +89,13 @@ section.internship {
 		section.internship .calendar #location { display:block; 
 			font-weight:bold; 
 			color:#51a1d6; } 
+		#applydate { display:table-cell; 
+			font-size:24pt; }
+/*
+ #applydate { display:table-cell; 
+			font-size:24pt; 
+			margin-left: 10px;}
+*/
 
 
 /* 	COMPANIES SECTION 	*/
