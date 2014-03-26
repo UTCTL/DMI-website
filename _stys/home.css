@@ -103,7 +103,7 @@ section.companies { background-color:#363636;
 	background-image:url('../_imgs/bg_block.png'); 
 	background-repeat:repeat; 
 	background-attachment:fixed; 
-	height:330px; 
+	height:410px; 
 	padding:0px; } 
 	
 	section.companies content { padding:0px; } 
@@ -114,7 +114,7 @@ section.companies { background-color:#363636;
 	section.companies content .label { display:table-cell; 
 		display:none; 
 		width:100px; 
-		height:192px; 
+		height:2px; 
 		font-family:Lucida Grande, Arial; 
 		font-size:14px; 
 		vertical-align:middle; 
@@ -145,6 +145,11 @@ section.companies { background-color:#363636;
 			.logo#utlibarts { background-image:url('../_imgs/logos/utlibarts.png'); }
 			.logo#utlibs { background-image:url('../_imgs/logos/utlibs.png'); }
 			.logo#dmi { background-image:url('../_imgs/logos/dmi.png'); } 
+			.logo#tstv { background-image:url('../_imgs/logos/tstv.png'); } 
+			.logo#castleview { background-image:url('../_imgs/logos/castleview.png'); } 
+			.logo#brightleaf { background-image:url('../_imgs/logos/brightleaf.png'); } 
+			.logo#pushstart { background-image:url('../_imgs/logos/pushstart.png'); } 
+			.logo#alpheus { background-image:url('../_imgs/logos/alpheus.png'); } 
 
 /* 	APPLY SECTION 	*/
 section.apply { } 
