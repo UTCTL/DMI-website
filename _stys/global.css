@@ -85,6 +85,11 @@ a { text-decoration:none;
 	color:#09f; } 
 a:hover { color:#3bf; }
 
+a, object, embed, input::-moz-focus-inner {
+	outline:0; 
+	border:0px; 
+}
+
 h1 { font-family:Segan; 
 	font-size:56px; 
 	font-weight:normal; 
