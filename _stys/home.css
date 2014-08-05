@@ -57,6 +57,11 @@ section.internship {
 	section.internship content .play-button { position:relative; 
 		top:80px; }
 
+	@-moz-document url-prefix() { 
+		section.internship content .play-button { 
+			vertical-align:middle; }
+	}
+
 	section.internship content .play-button .thumbnail { background-image:url('../_imgs/video_internship_play.png'); }
 
 	section.internship h2 { text-shadow:0px 0px 5px #000; }
