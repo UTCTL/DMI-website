@@ -91,6 +91,8 @@ function change_nav_state(focus) {
 			focus = 'internship'; 
 			break; 
 		case 'staff':
+			focus = 'staff'; 
+			break; 
 		case 'footer':
 			focus = 'projects'; 
 			break; 

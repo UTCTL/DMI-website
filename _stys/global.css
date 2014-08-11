@@ -141,3 +141,17 @@ section.footer { font-size:9pt;
 	#author a { color:#555; 
 		text-decoration:none; }
 	#author a:hover { color:#777; } 
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+	.small_logo { visibility:hidden; }
+	nav .menu li:not(#logo) { 
+		font-size:20pt; } 
+
+}
