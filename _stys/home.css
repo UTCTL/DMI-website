@@ -402,7 +402,8 @@ section.staff { background-repeat:repeat;
 
 
 
-@media only screen and (max-width: 999px) { 
+/* iphone and ipad retina displays */ 
+@media only screen and (max-device-width: 2000px) { 
 	body.retina section.about content .description { display:block; 
 		text-align:center; 
 		margin:auto; 
@@ -452,17 +453,8 @@ section.staff { background-repeat:repeat;
 	body.retina section.internship content .play-button { top:0px; } 
 }
 
-
-/*@media 
-only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 999px),
-only screen and (   min--moz-device-pixel-ratio: 2) and (max-device-width: 999px),
-only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-device-width: 999px),
-only screen and (        min-device-pixel-ratio: 2) and (max-device-width: 999px),
-only screen and (                min-resolution: 192dpi) and (max-device-width: 999px),
-only screen and (                min-resolution: 2dppx) and (max-device-width: 999px),
-only screen and (			   max-device-width: 999px), 
-only screen and (			   		  max-width: 999px) { 
-
+/* previous generations iphone and ipad */ 
+@media only screen and (max-device-width: 1000px) { 
 	section.about content .description { display:block; 
 		text-align:center; 
 		margin:auto; 
@@ -492,14 +484,14 @@ only screen and (			   		  max-width: 999px) {
 	section.staff ul li { width:200px; }
 
 	section.staff ul li div { width:150px; height:150px; 
-		margin:50px 10px; }
+			margin:50px 10px; }
 	section.staff ul li p { width:200px; 
 		margin:10px -5px; 
 		font-size:20pt; }
 
-		section.staff ul li p.job-description { font-size:16pt; 
+		body.retina section.staff ul li p.job-description { font-size:16pt; 
 			margin:10px -5px; } 
-		section.staff a.icon { font-size:22pt; 
+		body.retina section.staff a.icon { font-size:22pt; 
 			position:relative; 
 			left:-15px;  } 
 
@@ -510,5 +502,4 @@ only screen and (			   		  max-width: 999px) {
 		width:600px; } 
 	
 	section.internship content .play-button { top:0px; } 
-
-}*/
+}

@@ -142,23 +142,15 @@ section.footer { font-size:9pt;
 		text-decoration:none; }
 	#author a:hover { color:#777; } 
 
+
+/* iphone and ipad retina displays */ 
 @media only screen and (max-device-width: 2000px) { 
 	body.retina .small_logo { visibility:hidden; }
 	body.retina nav .menu li { font-size:20pt; } 
 } 
 
-/*@media 
-only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1200px),
-only screen and (   min--moz-device-pixel-ratio: 2) and (max-device-width: 1200px),
-only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-device-width: 1200px),
-only screen and (        min-device-pixel-ratio: 2) and (max-device-width: 1200px),
-only screen and (                min-resolution: 192dpi) and (max-device-width: 1200px),
-only screen and (                min-resolution: 2dppx) and (max-device-width: 1200px),
-only screen and (			   max-device-width: 1200px), 
-only screen and (			   		  max-width: 1200px) { 
-
+/* previous generations iphone and ipad */ 
+@media only screen and (max-device-width: 1000px) { 
 	.small_logo { visibility:hidden; }
-	nav .menu li { 
-		font-size:20pt; } 
-
-} */
+	.menu li { font-size:20pt; } 
+} 
