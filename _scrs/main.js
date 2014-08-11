@@ -3,6 +3,11 @@ $(document).ready(function() {
 	setup_slider(); 
 	setup_lightbox(); 
 
+	if(window.retina || window.devicePixelRatio > 1) {
+		console.log("retina"); 
+		$('body').addClass('retina'); 
+	} else console.log("non-retina"); 
+
 	$(window).load(function() {
 		read_url(); 
 	}); 

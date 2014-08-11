@@ -400,15 +400,68 @@ section.staff { background-repeat:repeat;
 	section.staff a:hover { color:#ccc; 
 		text-shadow:0px 0px 10px #09f; }
 
-@media 
-only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1200px),
-only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1200px),
-only screen and (     -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1200px),
-only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1200px),
-only screen and (                min-resolution: 192dpi) and (min-device-width: 1200px),
-only screen and (                min-resolution: 2dppx) and (min-device-width: 1200px), 
+
+
+@media only screen and (max-width: 999px) { 
+	body.retina section.about content .description { display:block; 
+		text-align:center; 
+		margin:auto; 
+		padding-bottom:20px; } 
+	body.retina .play-button { display:block; 
+		margin:auto; } 
+
+	body.retina .staff { font-size:12pt; } 
+	body.retina .staff p { font-size:14pt; } 
+
+	body.retina section.projects .banner { display:block; 
+		width:600px; 
+		margin:auto;  
+		padding-bottom:30px; 
+		font-size:16pt; 
+		line-height:28px; 
+		text-align:center;  }
+	body.retina section.projects .project-content { display:block; }
+
+
+	body.retina section.projects .video { 
+		background-size:200px;
+		background-position:center top; 
+		cursor:pointer; }
+	body.retina section.projects .video:hover { background-position:0px 0px; } 
+
+	body.retina section.staff ul li { width:200px; }
+
+	body.retina section.staff ul li div { width:150px; height:150px; 
+			margin:50px 10px; }
+	body.retina section.staff ul li p { width:200px; 
+		margin:10px -5px; 
+		font-size:20pt; }
+
+		body.retina section.staff ul li p.job-description { font-size:16pt; 
+			margin:10px -5px; } 
+		body.retina section.staff a.icon { font-size:22pt; 
+			position:relative; 
+			left:-15px;  } 
+
+	body.retina section.internship .description, 
+	body.retina section.internship .description#event { display:block; 
+		text-align:center; 
+		margin:auto; 
+		width:600px; } 
+	
+	body.retina section.internship content .play-button { top:0px; } 
+}
+
+
+/*@media 
+only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 999px),
+only screen and (   min--moz-device-pixel-ratio: 2) and (max-device-width: 999px),
+only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-device-width: 999px),
+only screen and (        min-device-pixel-ratio: 2) and (max-device-width: 999px),
+only screen and (                min-resolution: 192dpi) and (max-device-width: 999px),
+only screen and (                min-resolution: 2dppx) and (max-device-width: 999px),
 only screen and (			   max-device-width: 999px), 
-only screen and (			   		  max-width: 999px) {
+only screen and (			   		  max-width: 999px) { 
 
 	section.about content .description { display:block; 
 		text-align:center; 
@@ -448,8 +501,7 @@ only screen and (			   		  max-width: 999px) {
 			margin:10px -5px; } 
 		section.staff a.icon { font-size:22pt; 
 			position:relative; 
-			left:-15px; 
-			/*margin-left:-30px;*/ } 
+			left:-15px;  } 
 
 	section.internship .description, 
 	section.internship .description#event { display:block; 
@@ -459,4 +511,4 @@ only screen and (			   		  max-width: 999px) {
 	
 	section.internship content .play-button { top:0px; } 
 
-}
+}*/
