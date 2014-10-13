@@ -5,9 +5,9 @@ $(document).ready(function() {
 
 	if ((window.retina || window.devicePixelRatio > 1) &&
 		($(window).width()<1200)) {
-		console.log("retina"); 
+		// console.log("retina"); 
 		$('body').addClass('retina'); 
-	} else console.log("non-retina"); 
+	} //else console.log("non-retina"); 
 
 	$(window).load(function() {
 		read_url(); 
