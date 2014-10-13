@@ -402,8 +402,60 @@ section.staff { background-repeat:repeat;
 
 
 
+/* previous generations iphone and ipad */ 
+@media only screen and (max-device-width: 768px) { 
+	section.about content .description { display:block; 
+		text-align:center; 
+		margin:auto; 
+		padding-bottom:20px; } 
+	.play-button { display:block; 
+		margin:auto; } 
+
+	.staff { font-size:12pt; } 
+	.staff p { font-size:14pt; } 
+
+	section.projects .banner { display:block; 
+		width:600px; 
+		margin:auto;  
+		padding-bottom:30px; 
+		font-size:16pt; 
+		line-height:28px; 
+		text-align:center; } 
+	section.projects .project-content { display:block; }
+
+
+	section.projects .video { 
+		background-size:200px;
+		background-position:center top; 
+		cursor:pointer; }
+	section.projects .video:hover { background-position:0px 0px; } 
+
+	section.staff ul li { width:200px; }
+
+	section.staff ul li div { width:150px; height:150px; 
+			margin:50px 10px; }
+	section.staff ul li p { width:200px; 
+		margin:10px -5px; 
+		font-size:20pt; }
+
+		body.retina section.staff ul li p.job-description { font-size:16pt; 
+			margin:10px -5px; } 
+		body.retina section.staff a.icon { font-size:22pt; 
+			position:relative; 
+			left:-15px;  } 
+
+	section.internship .description, 
+	section.internship .description#event { display:block; 
+		text-align:center; 
+		margin:auto; 
+		width:600px; } 
+	
+	section.internship content .play-button { top:0px; } 
+}
+
+
 /* iphone and ipad retina displays */ 
-@media only screen and (max-device-width: 2000px) { 
+@media only screen and (max-device-width: 768px) { 
 	body.retina section.about content .description { display:block; 
 		text-align:center; 
 		margin:auto; 
@@ -451,55 +503,4 @@ section.staff { background-repeat:repeat;
 		width:600px; } 
 	
 	body.retina section.internship content .play-button { top:0px; } 
-}
-
-/* previous generations iphone and ipad */ 
-@media only screen and (max-device-width: 1000px) { 
-	section.about content .description { display:block; 
-		text-align:center; 
-		margin:auto; 
-		padding-bottom:20px; } 
-	.play-button { display:block; 
-		margin:auto; } 
-
-	.staff { font-size:12pt; } 
-	.staff p { font-size:14pt; } 
-
-	section.projects .banner { display:block; 
-		width:600px; 
-		margin:auto;  
-		padding-bottom:30px; 
-		font-size:16pt; 
-		line-height:28px; 
-		text-align:center;  }
-	section.projects .project-content { display:block; }
-
-
-	section.projects .video { 
-		background-size:200px;
-		background-position:center top; 
-		cursor:pointer; }
-	section.projects .video:hover { background-position:0px 0px; } 
-
-	section.staff ul li { width:200px; }
-
-	section.staff ul li div { width:150px; height:150px; 
-			margin:50px 10px; }
-	section.staff ul li p { width:200px; 
-		margin:10px -5px; 
-		font-size:20pt; }
-
-		body.retina section.staff ul li p.job-description { font-size:16pt; 
-			margin:10px -5px; } 
-		body.retina section.staff a.icon { font-size:22pt; 
-			position:relative; 
-			left:-15px;  } 
-
-	section.internship .description, 
-	section.internship .description#event { display:block; 
-		text-align:center; 
-		margin:auto; 
-		width:600px; } 
-	
-	section.internship content .play-button { top:0px; } 
 }

@@ -3,7 +3,8 @@ $(document).ready(function() {
 	setup_slider(); 
 	setup_lightbox(); 
 
-	if(window.retina || window.devicePixelRatio > 1) {
+	if ((window.retina || window.devicePixelRatio > 1) &&
+		($(window).width()<1200)) {
 		console.log("retina"); 
 		$('body').addClass('retina'); 
 	} else console.log("non-retina"); 

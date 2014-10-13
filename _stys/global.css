@@ -143,14 +143,15 @@ section.footer { font-size:9pt;
 	#author a:hover { color:#777; } 
 
 
-/* iphone and ipad retina displays */ 
-@media only screen and (max-device-width: 2000px) { 
-	body.retina .small_logo { visibility:hidden; }
-	body.retina nav .menu li { font-size:20pt; } 
-} 
 
 /* previous generations iphone and ipad */ 
-@media only screen and (max-device-width: 1000px) { 
+@media only screen and (max-device-width: 768px) { 
 	.small_logo { visibility:hidden; }
 	.menu li { font-size:20pt; } 
+} 
+
+/* iphone and ipad retina displays */ 
+@media only screen and (max-device-width: 768px) { 
+	body.retina .small_logo { visibility:hidden; }
+	body.retina nav .menu li { font-size:20pt; } 
 } 
